@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<button style="width:60px; height:60px" class="Button_up" type="primary" bindtap="move_up"><text>上</text></button>
+<view class="Button_leftright">
+<button style="width:60px; height:60px" class="Button_left" type="primary" bindtap="move_left"><text>左</text></button>
+<button style="width:60px; height:60px" class="Button_right" type="primary" bindtap="move_right"><text>右</text></button>
+</view>
+<button style="width:60px; height:60px" class="Button_down" type="primary" bindtap="move_down"><text>下</text></button>

@@ -1,0 +1,16 @@
+<!--pages/move/move.wxml-->
+<view class="container">
+  <canvas canvas-id="gaugeCanvas" class="gauge-canvas"></canvas>
+</view>
+<view class="box">
+<view class="title"><text>方向：{{sumX}}</text></view>
+    <view class="fontStyle">
+		<view></view>
+	</view>
+</view>
+<button class="change" bindtap="change" type="primary">切换模式</button>
+<view class="progress-container"><progress percent="{{progressX}}" show-info stroke-width="4" /></view>
+<!--<view class="progress-container"><progress percent="{{progressY}}" show-info stroke-width="4" /></view>-->
+<view class="touchView" catchtouchstart="touchstart" catchtouchend="touchend" catchtouchmove="touchmove"></view>
+
+

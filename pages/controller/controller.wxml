@@ -1,0 +1,9 @@
+<view><text>摇杆中间位置：（{{StartX}}，{{StartY}}）</text></view>
+<view><text>当前滑动位置：（{{leftLooks}}，{{topLooks}}）</text></view>
+<view><text>摇杆偏转角度： {{angel}}</text></view>
+<view class="relative">
+  <!-- 背景图片 -->
+  <image style="width: 100px; height: 100px;" class="pic_background" src="pictures/circle.png"></image>
+  <!-- 摇杆图片 -->
+  <image style="width: 80px; height: 80px;left:{{leftLooks}}px;top:{{topLooks}}px;" catchtouchend='ImageReturn' catchtouchmove='ImageTouchMove' class="pic_tou" src="pictures/head.png" bindtap="ImageTouch"></image>
+</view>

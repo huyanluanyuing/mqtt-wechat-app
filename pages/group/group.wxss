@@ -1,0 +1,40 @@
+Logs.wxss
+.relative {
+  height: 100%;
+  width: 100%;
+
+}
+.pic_background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.pic_tou {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.container {
+  display: flex;
+  flex-direction: row; /* 水平排列 */
+  justify-content: space-between; /* 元素之间均匀分布 */
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flexbox-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* 根据需要调整按钮宽度 */
+  height: 100px; /* 根据需要调整按钮高度 */
+}
+
+.flexbox-text {
+  font-size: 15px;
+}

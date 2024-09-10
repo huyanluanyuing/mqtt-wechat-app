@@ -1,0 +1,34 @@
+<view class="container-direction">
+  <canvas canvas-id="compassCanvas" class="compass-canvas" style="position: relative; left: 189rpx; top: 676rpx; width: 374rpx; height: 354rpx; display: block; box-sizing: border-box"></canvas>
+</view>
+<view class="container-gauge">
+  <canvas canvas-id="gaugeCanvas" class="gauge-canvas" style="position: relative; left: 186rpx; top: -378rpx; width: 372rpx; height: 356rpx; display: block; box-sizing: border-box"></canvas>
+</view>
+
+<button class="change" bindtap="change" type="primary" style="position: relative; left: -181rpx; top: 511rpx">切换模式</button>
+<!--<view class="progress-container"><progress percent="{{progressX}}" show-info stroke-width="4" /></view> !-->
+<view class="touchView" catchtouchstart="touchstart" catchtouchend="touchend" catchtouchmove="touchmove" style="width: 368rpx; height: 574rpx; display: block; box-sizing: border-box; position: relative; left: -181rpx; top: -806rpx"></view>
+
+
+<view class="container-rocker">
+  <view>
+    <view><text>摇杆中间位置：（{{StartX}}，{{StartY}}）</text></view>
+    <view><text>当前滑动位置：（{{leftLooks}}，{{topLooks}}）</text></view>
+    <view><text>摇杆偏转角度： {{angel}}</text></view>
+  </view>
+  <view>
+     
+    <button type="primary" style="height: 40px; width: 120px;" class="flexbox-button" bindtap="change_Direction">
+    <text class="flexbox-text">{{state}}</text>
+    </button>
+    
+  </view>
+</view>
+
+<view class="relative"  catchtouchmove="ControllerTouchMove" catchtouchend="ControlllerTouchEnd" >
+  <!-- 背景图片 -->
+  <image style="width: 100px; height: 100px; left:{{StartX1}}px;top:{{StartY1}}px;" class="pic_background" src="pictures/circle.png"></image>
+  <!-- 摇杆图片 -->
+  <image style="width: 80px; height: 80px;left:{{leftLooks}}px;top:{{topLooks}}px;" catchtouchend='ImageReturn' catchtouchmove='ImageTouchMove' class="pic_tou" src="pictures/head.png" ></image>
+</view>
+

@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/move/move",
+    "pages/controller/controller",
+    "pages/logs/logs",
+    "pages/group/group",
+    "pages/pro/pro"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "连接"
+      },
+      {
+        "pagePath": "pages/move/move",
+        "text": "移动"
+      },
+      {
+        "pagePath": "pages/controller/controller",
+        "text": "摇杆"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs"
+      },
+      {
+        "pagePath": "pages/pro/pro",
+        "text": "pro"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MQTT Demo",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

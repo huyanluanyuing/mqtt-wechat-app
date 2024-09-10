@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+.Button_leftright{
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.Button_up{
+  height:60px;
+}
+.Button_down{
+  height:30px;
+  width:30px;
+}
+.Button_left{
+  height:30px;
+  width:30px;
+}
+.Button_right{
+  height:30px;
+  width:30px;
+}
